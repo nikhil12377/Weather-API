@@ -2,6 +2,8 @@
 
 An application used to show weather updates based on user preference, built with React, Bootstrap, JavaScript, and CSS.
 
+website is live at [Weather App](https://nikhil12377.github.io/Weather-App/)
+
 ## Installation and Setup Instructions
 
 Clone down this repository. You will need `node` and `npm` installed globally on your machine.
