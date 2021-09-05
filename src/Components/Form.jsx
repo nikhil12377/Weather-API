@@ -15,6 +15,11 @@ export default function Form() {
               type="text"
               placeholder="enter city name"
               value={place}
+              onKeyUp={(e) => {
+                if (e.key === "Enter") {
+                  dispatch(UpdatePlaceData(place));
+                }
+              }}
               onChange={(e) => {
                 dispatch(UpdatePlace(e.target.value));
               }}

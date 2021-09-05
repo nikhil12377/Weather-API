@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 export default function App() {
   const theme = useSelector((state) => state.theme);
   return (
-    <div className={theme ? "App Dark" : "App"}>
+    <div className={theme ? "App Dark" : "App Light"}>
       <ThemeToggle />
       <Form />
       <WeatherCard />
