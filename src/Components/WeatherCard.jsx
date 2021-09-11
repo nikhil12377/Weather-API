@@ -2,6 +2,8 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 export default function WeatherCard() {
+  // placeData store the data we have fetch from API
+  // the data is in JSON format
   const placeData = useSelector((state) => state.placeData);
   const theme = useSelector((state) => state.theme);
   return (
@@ -9,7 +11,10 @@ export default function WeatherCard() {
       <div className="container">
         <div className="row">
           <div className="offset-md-4 col-12 col-md-4">
+            {/* checks wether we have correct data of location or not */}
             {placeData.location ? (
+              // if we have correct data
+              // we'll display data of temperature, location name, etc...
               <div className={theme ? "card Dark" : "card"}>
                 <img src={placeData.current.condition.icon} alt="" />
                 <div className="temp">{placeData.current.temp_c}°</div>
@@ -42,6 +47,7 @@ export default function WeatherCard() {
                 </div>
               </div>
             ) : (
+              // else we'll tell user to enter correct name again
               <h2 className="heading">Enter the name of place</h2>
             )}
           </div>

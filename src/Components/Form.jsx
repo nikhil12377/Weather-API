@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { UpdatePlace, UpdatePlaceData } from "../actions/Index";
 
 export default function Form() {
+  // place stores the data fetched by API of the
+  // location user have entered
   const place = useSelector((state) => state.place);
   const theme = useSelector((state) => state.theme);
   const dispatch = useDispatch();

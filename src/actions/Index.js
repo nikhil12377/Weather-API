@@ -5,6 +5,9 @@ const UpdatePlace = (place) => {
     };
 };
 
+// this action takes the name of location as an argument
+// and fetch the data from weather API by providing the location
+// also we are using redux-thunk here
 const UpdatePlaceData = (place) => {
     return (dispatch) => {
         fetch(

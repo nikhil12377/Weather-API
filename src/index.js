@@ -6,6 +6,8 @@ import store from './store';
 
 
 ReactDOM.render(
+  // as name suggests Provider provide the data of 
+  // store in App
   <Provider store={store}>
     <App />
   </Provider>
